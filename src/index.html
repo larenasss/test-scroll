@@ -6,64 +6,452 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="favicon.ico">
-  <title>Todo list</title>
+  <title>LK</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
-      <div class="container">
-        <div class="header__content">
-          <div class="header__logo">
-            <div class="logo-title">Todo list</div>
+    <div class="content">
+      <div class="content__left">
+        <div class="d-flex height-100">
+          <div id class="col column" data-control="scroll">
+            <div class="block-overlay test-parent">
+              <div class="applications test-child">
+                <div class="test-content content-scroll">
+                  <div class="applications__header">
+                    <div class="applications__header-info mb-2">
+                      <div class="applications__title me-2">
+                        <div class="title">Константинопальский Константин</div>
+                      </div>
+                      <div class="applications__btn">
+                        <button class="">...</button>
+                      </div>
+                    </div>
+                    <div class="application__header-desc">
+                      <span>принимать заявки + тогл</span>
+                    </div>
+                  </div>
+                  <div class="applications__body">
+                    <ul class="applications__block">
+                      <li>
+                        <div class="application-info">
+                          <div class="text-gray mb-3">С доработки/перезвонить</div>
+                          <ul class="application-list">
+                            <li class=" active">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить, просрочен 30 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li class="">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить через 4 мин 15 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li>
+                              <div class="mb-1 text-black">Петров Пётр Александрович</div>
+                              <div class="text-gray mb-1">Доработано 5 мин</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="application-info">
+                          <div class="text-gray mb-3">Новые заявки</div>
+                          <ul class="application-list">
+                            <li class=" active">
+                              <div class="mb-1 text-black">Константинопальский Константин Константинович</div>
+                              <div class="text-gray mb-1">В работе 20 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li class="">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить, просрочен 30 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li>
+                              <div class="mb-1 text-black">Пачичу Сергей Иванович</div>
+                              <div class="text-gray mb-1">Не рассмотрен 4 мин</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="application-info">
+                          <div class="text-gray mb-3">Новые заявки</div>
+                          <ul class="application-list">
+                            <li class=" active">
+                              <div class="mb-1 text-black">Константинопальский Константин Константинович</div>
+                              <div class="text-gray mb-1">В работе 20 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li class="">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить, просрочен 30 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li>
+                              <div class="mb-1 text-black">Пачичу Сергей Иванович</div>
+                              <div class="text-gray mb-1">Не рассмотрен 4 мин</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="application-info">
+                          <div class="text-gray mb-3">Новые заявки</div>
+                          <ul class="application-list">
+                            <li class=" active">
+                              <div class="mb-1 text-black">Константинопальский Константин Константинович</div>
+                              <div class="text-gray mb-1">В работе 20 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li class="">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить, просрочен 30 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li>
+                              <div class="mb-1 text-black">Пачичу Сергей Иванович</div>
+                              <div class="text-gray mb-1">Не рассмотрен 4 мин</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="header__themes">
-            <div class="themes">
-              <div class="switch">
-                <input type="checkbox" id="switch" />
-                <label class="switch__box" for="switch"></label>
+          <div class="col-7 column">
+            <div class="block-overlay test-parent">
+              <div class="applications test-child">
+                <div class="test-content content-scroll">
+                  <div class="applications__header">
+                    <div class="applications__header-info mb-2">
+                      <div class="applications__title me-2">
+                        <div class="title">Константинопальский Константин</div>
+                      </div>
+                      <div class="applications__btn">
+                        <button class="">...</button>
+                      </div>
+                    </div>
+                    <div class="application__header-desc">
+                      <span>принимать заявки + тогл</span>
+                    </div>
+                  </div>
+                  <div class="applications__body">
+                    <ul class="applications__block">
+                      <li>
+                        <div class="application-info">
+                          <div class="text-gray mb-3">С доработки/перезвонить</div>
+                          <ul class="application-list">
+                            <li class=" active">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить, просрочен 30 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li class="">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить через 4 мин 15 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li>
+                              <div class="mb-1 text-black">Петров Пётр Александрович</div>
+                              <div class="text-gray mb-1">Доработано 5 мин</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="application-info">
+                          <div class="text-gray mb-3">Новые заявки</div>
+                          <ul class="application-list">
+                            <li class=" active">
+                              <div class="mb-1 text-black">Константинопальский Константин Константинович</div>
+                              <div class="text-gray mb-1">В работе 20 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li class="">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить, просрочен 30 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li>
+                              <div class="mb-1 text-black">Пачичу Сергей Иванович</div>
+                              <div class="text-gray mb-1">Не рассмотрен 4 мин</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="application-info">
+                          <div class="text-gray mb-3">Новые заявки</div>
+                          <ul class="application-list">
+                            <li class=" active">
+                              <div class="mb-1 text-black">Константинопальский Константин Константинович</div>
+                              <div class="text-gray mb-1">В работе 20 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li class="">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить, просрочен 30 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li>
+                              <div class="mb-1 text-black">Пачичу Сергей Иванович</div>
+                              <div class="text-gray mb-1">Не рассмотрен 4 мин</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="application-info">
+                          <div class="text-gray mb-3">Новые заявки</div>
+                          <ul class="application-list">
+                            <li class=" active">
+                              <div class="mb-1 text-black">Константинопальский Константин Константинович</div>
+                              <div class="text-gray mb-1">В работе 20 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li class="">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить, просрочен 30 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li>
+                              <div class="mb-1 text-black">Пачичу Сергей Иванович</div>
+                              <div class="text-gray mb-1">Не рассмотрен 4 мин</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <div class="content">
-      <div class="container">
-        <div class="content__top">
-          <form class="form" name="form-tasks" data-form-mode="task-new">
-            <div class="form__content">
-              <div class="form__block">
-                <input type="text" name="title-task" class="custom-input" placeholder="Заголовок задачи">
-              </div>
-              <div class="form__block">
-                <textarea type="text" name="body-task" class="custom-input" placeholder="Тело задачи"></textarea>
-              </div>
-              <div class="form__block">
-                <button class="custom-btn" type="submit">готово</button>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="content__body">
-          <div class="content__tabs">
-            <div class="tabs">
-              <div class="tabs__content">
-                <button class="tabs__item js-show-all-task">
-                  все задачи
-                </button>
-                <button class="tabs__item tabs__item_right js-show-completed-task" data-show-no-completed='false'>
-                  незавершенные
-                </button>
+      <div class="content__right">
+        <div class="d-flex height-100">
+          <div class="col column">
+            <div class="block-overlay test-parent">
+              <div class="applications test-child">
+                <div class="test-content content-scroll">
+                  <div class="applications__header">
+                    <div class="applications__header-info mb-2">
+                      <div class="applications__title me-2">
+                        <div class="title">Константинопальский Константин</div>
+                      </div>
+                      <div class="applications__btn">
+                        <button class="">...</button>
+                      </div>
+                    </div>
+                    <div class="application__header-desc">
+                      <span>принимать заявки + тогл</span>
+                    </div>
+                  </div>
+                  <div class="applications__body">
+                    <ul class="applications__block">
+                      <li>
+                        <div class="application-info">
+                          <div class="text-gray mb-3">С доработки/перезвонить</div>
+                          <ul class="application-list">
+                            <li class=" active">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить, просрочен 30 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li class="">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить через 4 мин 15 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li>
+                              <div class="mb-1 text-black">Петров Пётр Александрович</div>
+                              <div class="text-gray mb-1">Доработано 5 мин</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="application-info">
+                          <div class="text-gray mb-3">Новые заявки</div>
+                          <ul class="application-list">
+                            <li class=" active">
+                              <div class="mb-1 text-black">Константинопальский Константин Константинович</div>
+                              <div class="text-gray mb-1">В работе 20 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li class="">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить, просрочен 30 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li>
+                              <div class="mb-1 text-black">Пачичу Сергей Иванович</div>
+                              <div class="text-gray mb-1">Не рассмотрен 4 мин</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="application-info">
+                          <div class="text-gray mb-3">Новые заявки</div>
+                          <ul class="application-list">
+                            <li class=" active">
+                              <div class="mb-1 text-black">Константинопальский Константин Константинович</div>
+                              <div class="text-gray mb-1">В работе 20 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li class="">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить, просрочен 30 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li>
+                              <div class="mb-1 text-black">Пачичу Сергей Иванович</div>
+                              <div class="text-gray mb-1">Не рассмотрен 4 мин</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="application-info">
+                          <div class="text-gray mb-3">Новые заявки</div>
+                          <ul class="application-list">
+                            <li class=" active">
+                              <div class="mb-1 text-black">Константинопальский Константин Константинович</div>
+                              <div class="text-gray mb-1">В работе 20 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li class="">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить, просрочен 30 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li>
+                              <div class="mb-1 text-black">Пачичу Сергей Иванович</div>
+                              <div class="text-gray mb-1">Не рассмотрен 4 мин</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="js-container-tasks">
-
+          <div class="col column">
+            <div class="block-overlay test-parent">
+              <div class="applications test-child">
+                <div class="test-content content-scroll">
+                  <div class="applications__header">
+                    <div class="applications__header-info mb-2">
+                      <div class="applications__title me-2">
+                        <div class="title">Константинопальский Константин</div>
+                      </div>
+                      <div class="applications__btn">
+                        <button class="">...</button>
+                      </div>
+                    </div>
+                    <div class="application__header-desc">
+                      <span>принимать заявки + тогл</span>
+                    </div>
+                  </div>
+                  <div class="applications__body">
+                    <ul class="applications__block">
+                      <li>
+                        <div class="application-info">
+                          <div class="text-gray mb-3">С доработки/перезвонить</div>
+                          <ul class="application-list">
+                            <li class=" active">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить, просрочен 30 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li class="">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить через 4 мин 15 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li>
+                              <div class="mb-1 text-black">Петров Пётр Александрович</div>
+                              <div class="text-gray mb-1">Доработано 5 мин</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="application-info">
+                          <div class="text-gray mb-3">Новые заявки</div>
+                          <ul class="application-list">
+                            <li class=" active">
+                              <div class="mb-1 text-black">Константинопальский Константин Константинович</div>
+                              <div class="text-gray mb-1">В работе 20 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li class="">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить, просрочен 30 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li>
+                              <div class="mb-1 text-black">Пачичу Сергей Иванович</div>
+                              <div class="text-gray mb-1">Не рассмотрен 4 мин</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="application-info">
+                          <div class="text-gray mb-3">Новые заявки</div>
+                          <ul class="application-list">
+                            <li class=" active">
+                              <div class="mb-1 text-black">Константинопальский Константин Константинович</div>
+                              <div class="text-gray mb-1">В работе 20 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li class="">
+                              <div class="mb-1 text-black">Сучиту Сергей Иванович</div>
+                              <div class="text-gray mb-1">Перезвонить, просрочен 30 сек</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                            <li>
+                              <div class="mb-1 text-black">Пачичу Сергей Иванович</div>
+                              <div class="text-gray mb-1">Не рассмотрен 4 мин</div>
+                              <div class="text-gray">ID1560939</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!--Render task item-->
         </div>
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
