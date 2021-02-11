@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
       // имя события прокрутки
       this.nameEvent = nameEvent;
       // родительский элемент в котором находится контент и скроллбар
-      this.viewport = container.querySelector('.test-child');
+      this.viewport = container.querySelector('.js-scroll-child');
       // элемент с контентом
-      this.content = this.viewport.querySelector('.test-content');
+      this.content = this.viewport.querySelector('.js-content-scroll');
       // высоты полученных элементов
       this.viewportHeight = this.viewport.offsetHeight;
       this.contentHeight = this.content.scrollHeight;

@@ -1,7 +1,7 @@
 @import "~normalize.css";
 
 body {
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.82);
@@ -34,12 +34,20 @@ html {
   color: rgba(0, 0, 0, 0.64);
 }
 
+.text-gray-white {
+  color: rgba(0, 0, 0, 0.4);
+}
+
 .text-black {
   color: #000000;
 }
 
 .height-100 {
   height: 100%;
+}
+
+.width-100 {
+  width: 100%;
 }
 
 /////////
@@ -63,15 +71,18 @@ html {
   background: #FFFFFF;
   padding: 24px 16px;
   width: 100%;
-  height: 100%;
 }
 
 .title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 120%;
   color: #000000;
   opacity: 0.82;
+
+  &_big {
+    font-size: 20px;
+  }
 }
 
 .applications {
@@ -107,34 +118,34 @@ html {
   }
 }
 
-.test-parent {
+.scroll-parent {
   position: relative;
 	overflow: hidden;
 	border: solid 1px #dedede;
 	border-width: 1px 0;
 }
 
-.test-child {
+.scroll-child {
   width: 100%;
 	overflow: hidden;
 	position: absolute;
 	left: 0;
-	top: 7px;
-	bottom: 7px;
-}
-
-.test-content {
-  position: absolute;
-	left: 0;
-	right: 0;
-  overflow-y: auto
+	top: 2px;
+	bottom: 0;
+  background: #FFFFFF;
 }
 
 .content-scroll {
 	height: 100%;
 	overflow-y: auto;
-	right: -17px;
+	right: -16px;
   padding: 24px 16px;
+  position: absolute;
+	left: 0;
+
+  &_padding {
+    padding: 0 16px 0 0;
+  }
 }
 
 .scrollbar, .scroller {
@@ -151,4 +162,10 @@ html {
 	border-radius: 2px;
 	background: #ccc;
 	cursor: pointer;
+}
+
+.block-info-list {
+  & > li {
+    border-bottom: 4px solid #EBEBEB;;
+  }
 }
