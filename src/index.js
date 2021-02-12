@@ -149,5 +149,45 @@ document.addEventListener('DOMContentLoaded', function() {
       // контента и вьюпорта текущего блока, регистрация обработчиков событий
       scrollbox.init();
     }
+
+    const checkbox = document.querySelector(".js-alert-complete");
+    const alert = document.querySelector(".js-alert");
+    checkbox.addEventListener("change", function() {
+      if(checkbox.checked) {
+        alert.classList.add("alert-success");
+        alert.classList.remove("alert-secondary");
+      } else {
+        alert.classList.remove("alert-success");
+        alert.classList.add("alert-secondary");
+      }
+    });
+    
+    function showAndHideBlock(show, hide) {
+      if(!show || !hide) return;
+      $(show).show();
+      $(hide).hide();
+    }
+
+    $(".js-btn-show-form").on("click", function() {
+      const contentHide = $(this).closest(".js-show-content");
+      const contentShow = contentHide.next(".js-show-form");
+      
+      showAndHideBlock(contentShow, contentHide);
+    });
+
+    $(".js-btn-hide-form").on("click", function() {
+      const contentHide = $(this).closest(".js-show-form");
+      const contentShow = contentHide.prev(".js-show-content");
+      
+      showAndHideBlock(contentShow, contentHide);
+    });
+
+    $(".js-btn-save-form").on("click", function() {
+      const contentHide = $(this).closest(".js-show-form");
+      const contentShow = contentHide.prev(".js-show-content");
+      
+      showAndHideBlock(contentShow, contentHide);
+    });
   })();
+  
 });
