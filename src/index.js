@@ -1,4 +1,5 @@
 import "./scss/index.scss";
+import noUiSlider from 'nouislider';
 
 document.addEventListener('DOMContentLoaded', function() {
   (function() {
@@ -164,8 +165,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function showAndHideBlock(show, hide) {
       if(!show || !hide) return;
-      $(show).show();
-      $(hide).hide();
+      $(show).show(20);
+      $(hide).hide(20);
+    }
+
+    function toogleBlock(btn) {
+      $(btn).closest(".js-toogle-parent").siblings(".js-toogle-block").slideToggle(200);
     }
 
     $(".js-btn-show-form").on("click", function() {
@@ -188,6 +193,23 @@ document.addEventListener('DOMContentLoaded', function() {
       
       showAndHideBlock(contentShow, contentHide);
     });
+
+    $(".js-btn-toogle-block").on("click", function() {
+      toogleBlock($(this));
+    });
+
+    var slider = document.getElementById('slider');
+
+    noUiSlider.create(slider, {
+      start: 40,
+      connect: 'lower',
+      range: {
+          'min': 2000,
+          'max': 13000
+      },
+    });
+
   })();
   
 });
+

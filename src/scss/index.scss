@@ -1,4 +1,5 @@
 @import "~normalize.css";
+@import "../../node_modules/nouislider/distribute/nouislider.min.css";
 
 body {
   font-size: 16px;
@@ -16,6 +17,10 @@ ul {
 body,
 html {
   height: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .wrapper {
@@ -47,10 +52,6 @@ html {
 
 .height-100 {
   height: 100%;
-}
-
-.width-100 {
-  width: 100%;
 }
 
 .fs-14 {
@@ -88,9 +89,21 @@ html {
 
 .content {
   display: inline-grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1.15fr 1fr;
   grid-gap: 16px;
   background: #F0F0F0;
+}
+
+.user-history-loan {
+  display: inline-grid;
+  grid-gap: 24px;
+  grid-template-columns: max-content max-content max-content max(72px) max(138px) minmax(78px, 150px);
+}
+
+.user-photo {
+  display: inline-grid;
+  grid-gap: 24px;
+  grid-template-columns: max(120px) max-content max-content;
 }
 
 .column {
@@ -98,7 +111,12 @@ html {
 
   &_side {
     flex: 0 0 auto;
-    width: 29%;
+    width: 28.5%;
+  }
+
+  &_photo {
+    flex: 0 0 auto;
+    width: 53%;
   }
 
   &:not(:last-child) {
@@ -122,6 +140,12 @@ html {
 
   &_first {
     border-top: 1px solid #DEE2E6;
+  }
+
+  &_full {
+    border: 1px solid #DEE2E6;
+    border-top: none;
+    padding: 16px;
   }
 }
 
@@ -225,23 +249,6 @@ html {
   }
 }
 
-.user-bank-card {
-  & li {
-    padding: 8px 0;
-  }
-
-  & li.active-block-card {
-    background: #E8E8E8;
-    margin: 0 -16px;
-    padding: 8px 16px;
-
-    & *:not(:last-child) {
-      pointer-events: none;
-      color: rgba(0, 0, 0, 0.4);
-    }
-  }
-}
-
 .default-switch {
   position: relative;
   display: inline-block;
@@ -292,6 +299,81 @@ html {
   font-size: 20px;
 }
 
-.js-show-form {
+.js-show-form, .js-toogle-block {
   display: none;
+}
+
+.block-photo {
+  &__header {
+    padding: 16px 32px;
+    background: #F8F9FA;
+    margin: -16px;
+  }
+}
+
+.comments-list {
+  & > li {
+    padding: 16px 0;
+    border-bottom: 1px solid #DEE2E6;
+    position: relative;
+    
+    &:first-child {
+      border-top: 1px solid #DEE2E6;
+    } 
+  }
+
+  &__date {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 130%;
+    padding: 0 8px;
+    background: #FFFFFF;
+  }
+}
+
+.calculator {
+  &__wrap {
+    padding: 10px 16px;
+    border: 1px solid #DEE2E6;
+  }
+}
+
+////////// no-ui
+
+.noUi-horizontal {
+  height: 8px;
+}
+
+.noUi-target {
+  box-shadow: none;
+  background: #EFEFEF;
+  border: none;
+}
+
+.noUi-connects {
+  border: 1px solid #B2B2B2;
+}
+
+.noUi-connect {
+  background: #007BFF;
+  height: 8px;
+}
+
+.noUi-horizontal .noUi-handle {
+  background: #007BFF;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  box-shadow: none;
+  border-radius: 50%;
+  top: -4px;
+  right: -8px;
+  outline: none;
+  border: none;
+
+  &::before, &::after {
+    display: none;
+  }
 }
